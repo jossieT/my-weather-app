@@ -22,6 +22,7 @@ const updateUI = (data) =>{
 
       if(dis.classList.contains('d-none')){
       dis.classList.remove('d-none');
+            console.log("Remove Done);
       }
       let timeSrc = null;
 
