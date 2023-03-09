@@ -7,7 +7,7 @@ const icon = document.querySelector('.icon img');
 const updateUI = (data) =>{
       const cityDet = data.cityDets;
       const weather = data.weather;
-
+      console.log("Update UI called");
       details.innerHTML = `
       <h5 class="my-3">${cityDet.EnglishName}</h5>
       <div class="my-3">${weather.WeatherText}</div>
@@ -38,6 +38,8 @@ const updateCity = async city =>{
 
     const cityDets = await getCity(city);
     const weather = await getWeather(cityDets.Key);
+
+    console.log("Update City called");
 
     return {cityDets, weather}
 };
