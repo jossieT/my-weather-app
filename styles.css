@@ -1,6 +1,5 @@
 body {
-    /* background: #eeedec; */
-    background: #3e3a58;
+    background-image: url("img/background.jpg");
     letter-spacing: 0.2em;
     font-size: 0.8em;
 }
